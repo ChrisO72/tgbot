@@ -1,6 +1,6 @@
 # Overview
 
-The Chat-GPt3 bot is a Telegram bot that uses the GPT-3 language model to answer user questions. It is built with Python 3.10.6 and the pyrogram library. Thanks to [ChatGPT Wrapper](https://github.com/acheong08/ChatGPT)
+The Chat-GPt3 bot is a Telegram bot that uses the GPT-3 language model to answer user questions. It is built with Python 3.10.6 and the pyrogram library
 
 ## Requirements
 
@@ -12,20 +12,20 @@ To use the Chat-GPt3 bot, you will need the following:
 - A bot token from Telegram (see [here](https://core.telegram.org/bots#6-botfather) for more information)
 - A database URL to store user information (using MongoDb)
 
-- The owner ID of the bot 
+- The owner ID of the bot
 
-- A log channel ID for the bot to post log messages 
+- A log channel ID for the bot to post log messages
 
 ## Required Variables
 
-| Variable Name                        | Value                                                                                                                                                          |
-| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `API_ID` (required)                  | Telegram api_id obtained from <https://my.telegram.org/apps>.                                                                                                  |
-| `API_HASH` (required)                | Telegram api_hash obtained from <https://my.telegram.org/apps>.                                                                                                |
-| `BOT_TOKEN` (required)          | Create a bot using @BotFather, and get the Telegram API token. |                                                                             
-| `OWNER_ID` (required)                   | ID of Owner.                                                                                          |
-| `DATABASE_URL` (required)         | [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)                                                                               |
-| `LOG_CHANNEL` (optional)         | A log channel ID for the bot to post log messages |     
+| Variable Name             | Value                                                                                                                                                          |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `API_ID` (required)       | Telegram api_id obtained from <https://my.telegram.org/apps>.                                                                                                  |
+| `API_HASH` (required)     | Telegram api_hash obtained from <https://my.telegram.org/apps>.                                                                                                |
+| `BOT_TOKEN` (required)    | Create a bot using @BotFather, and get the Telegram API token.                                                                                                 |
+| `OWNER_ID` (required)     | ID of Owner.                                                                                                                                                   |
+| `DATABASE_URL` (required) | [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo) |
+| `LOG_CHANNEL` (optional)  | A log channel ID for the bot to post log messages                                                                                                              |
 
 ## Usage
 
@@ -49,19 +49,16 @@ In addition to answering user questions, the Chat-GPt3 bot also supports the fol
     ban - Ban a user from using the bot.
     unban - Unban a user from using the bot.
 
-
-## Deploy 
-
+## Deploy
 
 You can deploy this bot anywhere.
 
-
-| Name              | Deploy        |
-| ----------------- | ------------- | 
-| Replit | [Deploy](https://replit.com/github/kevinnadar22/Chat-GPT3-Bot) |
-| Heroku            | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kevinnadar22/Chat-GPT3-Bot)                          |
-| Koyeb | [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=kevinnadar22/Chat-GPT3-Bot&name=Chat-GPT3-Bot&run_command=python3%20-m%20main&branch=main) |
-| VPS | Deploy On Your own |
+| Name   | Deploy                                                                                                                                                                                                                       |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Replit | [Deploy](https://replit.com/github/kevinnadar22/Chat-GPT3-Bot)                                                                                                                                                               |
+| Heroku | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kevinnadar22/Chat-GPT3-Bot)                                                                                   |
+| Koyeb  | [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/apps/deploy?type=git&repository=kevinnadar22/Chat-GPT3-Bot&name=Chat-GPT3-Bot&run_command=python3%20-m%20main&branch=main) |
+| VPS    | Deploy On Your own                                                                                                                                                                                                           |
 
 ## License
 
@@ -69,5 +66,4 @@ The Chat-GPt3 bot is licensed under the MIT License. See LICENSE for more inform
 
 ## Credits
 
-- [acheong08](https://github.com/acheong08)
-- [Me](https://github.com/kevinnadar22)
+- [Kevin](https://github.com/kevinnadar22)
