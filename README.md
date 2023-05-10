@@ -26,6 +26,9 @@ To use the Chat-GPt3 bot, you will need the following:
 | `OWNER_ID` (required)     | ID of Owner.                                                                                                                                                   |
 | `DATABASE_URL` (required) | [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo) |
 | `LOG_CHANNEL` (optional)  | A log channel ID for the bot to post log messages                                                                                                              |
+| `CRYPTO_PAY_API_KEY` (required)  | Get the API key for crypto payment through [Crypto Pay](https://t.me/CryptoBot). Type /pay and click on Create app                                                                                                    |
+| `PROVIDER_TOKEN` (required)  | Get API key for card payment from [Bot Father](https://t.me/botfather)                                                                                                      |
+| `PAYMENT_TESTING` (True or False) (optional)  | Set True if you are just testing the payment integration, Note: You have to enter test keys if you set this var to True                                                                                                          |
 
 ## Usage
 
@@ -45,6 +48,7 @@ Here are some examples of prompts you can use:
 In addition to answering user questions, the Chat-GPt3 bot also supports the following commands:
 
     start - Start the bot and receive a welcome message.
+    pay - Get the payment link for the bot.
     examples - Display some examples of prompts you can use with the bot.
     ban - Ban a user from using the bot.
     unban - Unban a user from using the bot.
