@@ -16,7 +16,7 @@ from pyrogram.raw.functions.messages import (
     SetBotPrecheckoutResults
 )
 
-from bot.config import PROVIDER_TOKEN, CRYPTO_PAY_API_KEY, PAYMENT_TESTING
+from bot.config import LOG_CHANNEL, PROVIDER_TOKEN, CRYPTO_PAY_API_KEY, PAYMENT_TESTING
 from bot.plugins.handlers import on_checkout_query
 
 
@@ -122,6 +122,10 @@ async def check_invoice(bot: Client, update: CallbackQuery):
         await update.message.edit_text(
             text="You successfully bought something.",
         )
+        await bot.send_message(
+            LOG_CHANNEL,
+            f"User {update.from_user.mention} bought something for ${invoice['amount']} in {invoice['asset']}",
+        )
     else:
         await update.answer(
             text="You have not paid yet.",
@@ -174,9 +178,13 @@ async def process_checkout_query(
     users: Dict[int, User],
     chats: Dict[int, Chat],
 ):
-    # print(html.escape(str(query))) - Payload
+    payload = html.escape(str(query))
     await bot.send_message(
         chat_id=query.user_id, text="You successfully bought our service."
+    )
+    await bot.send_message(
+        LOG_CHANNEL,
+        f"User {query.user_id} bought something\n\n{payload}",
     )
     return await bot.invoke(
         SetBotPrecheckoutResults(
